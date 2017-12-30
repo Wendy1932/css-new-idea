@@ -1,0 +1,98 @@
+.css-cell{
+	position: relative;
+	width: 30%;
+	height: 300px;
+	display: inline-block;
+	border: 3px solid #444444;
+
+}
+/*heart*/
+.heart{
+	position: absolute;
+     top:50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	background: red;
+	width:100px;
+	height: 100px;
+}
+.heart:before,.heart:after{
+	content: '';
+	position: absolute;
+	top:0;
+	left: -50px;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	background: red;
+}
+.heart:after{
+	top:-50px;
+	left: 0;
+}
+
+/*bubbly*/
+.bubbly{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	background: #00ccbb;
+	border-radius: 8px;
+	width: 200px;
+	padding: 40px 10px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+.bubbly:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	border: 34px solid;
+	border-top-color: #00ccbb;
+	border-bottom:0;
+	border-left: 0;
+	margin:0 0 -34px -17px;
+}
+
+/*test-box*/
+    .test-box{
+	position: absolute;
+	top: 50%;/*底部位置*/
+	left: 50%;/*相对于左边的位置，作用是居中*/
+	border: 34px solid transparent;/*这是一个边框宽度为34px的方形,transparent作用未知。*/
+	border-top-color: red;/*顶部边框的颜色为红色*/
+	border-bottom:0;/*底部边框宽度均为0*/
+	border-left: 0;/*左边边框宽度也为0,为什么要把left设置为0？*/
+	margin:0 0 -34px -17px;/*下面为-34px;左面为-17px;*/
+}
+
+/*test-box2*/
+.test-box2{
+	position: absolute;
+	border: 100px solid transparent;
+	border-top-color: red;
+	/*border-left-color: green;*/
+	border-left:0;
+}
+
+/* notching 切角 */
+.notching{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	padding:60px 20px;
+}
+.notching{
+	background: linear-gradient(135deg,transparent 15px,deeppink 0) top left,
+	            linear-gradient(-135deg,transparent 15px,deeppink 0) top right,
+	            linear-gradient(-45deg,transparent 15px,deeppink 0) bottom right,
+	            linear-gradient(45deg,transparent 15px, deeppink 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;            
+}
+
