@@ -96,3 +96,22 @@
 	background-repeat: no-repeat;            
 }
 
+/*弧形切角*/
+ .arc{
+ 	position:absolute;
+ 	top:50%;
+ 	left: 50%;
+ 	transform:translate(-50%,-50%);
+ 	width: 80px;
+ 	padding: 80px;
+ }
+ .arc{
+ 	background: radial-gradient(circle at top left, transparent 15px,yellowgreen 0) top left,
+ 	            radial-gradient(circle at top right, transparent 15px,yellowgreen 0) top right,
+ 	            radial-gradient(circle at bottom right, transparent 15px,yellowgreen 0) bottom right,
+ 	            radial-gradient(circle at bottom left, transparent 15px,yellowgreen 0) bottom left;
+ 	background-size: 50% 50%;
+ 	background-repeat: no-repeat;
+ }
+ 
+
